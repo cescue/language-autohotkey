@@ -1,14 +1,15 @@
 {
   "name": "language-autohotkey",
   "main": "./lib/language-autohotkey",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Syntax highlighting for AutoHotKey scripts.",
-  "activationEvents": ["language-autohotkey:toggle"],
+  "activationEvents": [
+    "language-autohotkey:toggle"
+  ],
   "repository": "https://github.com/nshakin/language-autohotkey",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
