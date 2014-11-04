@@ -1,0 +1,58 @@
+'scopeName': 'source.ahk'
+'name': 'AutoHotKey'
+'fileTypes': [
+    'ahk'
+]
+# 'firstLineMatch': ''
+'patterns': [
+
+    {# Quoted strings
+        'name': '.string'
+        'match': '["].*["]'
+        }
+    {# Percent sign enclosed strings
+        'name': '.string'
+        'captures':
+            '1': 'name': '.keyword.operator'
+            '2': 'name': '.string'
+            '3': 'name': '.keyword.operator'
+        'match': '(\\%)(.+)(\\%)'
+        }
+    {# Comment Lines
+        'captures':
+            '1': 'name': '.comment.line.ahk'
+            '2': 'name': '.punctuation.definition.semi-colon.comment'
+        'match': '((;).*)'
+        }
+    {# Numbers
+        'captures':
+            '1': 'name': '.constant.numeric'
+        'match': '\\s+([0-9]*)\\s+'
+        }
+    {# Directives
+        'captures':
+            '1': 'name': '.keyword.operator.ahk'
+            '2': 'name': '.keyword.control.directives.ahk'
+        'match': '([\\#])(\\w+)'
+        }
+    {# Build-in Variables
+        'name': '.constant.built-in-variable'
+        'match': '(A_Space|A_Tab|A_WorkingDir|A_ScriptDir|A_ScriptName|A_ScriptFullPath|A_ScriptHwnd|A_LineNumber|A_LineFile|A_ThisFunc|A_ThisLabel|A_AhkVersion|A_AhkPath|A_IsUnicode|A_IsCompiled|A_ExitReason|A_YYYY|A_MM|A_DD|A_MMMM|A_MMM|A_DDDD|A_DDD|A_WDay|A_YDay|A_YWeek|A_Hour|A_Min|A_Sec|A_MSec|A_Now|A_NowUTC|A_TickCount|A_IsSuspended|A_IsPaused|A_IsCritical|A_BatchLines|A_TitleMatchMode|A_TitleMatchModeSpeed|A_DetectHiddenWindows|A_DetectHiddenText|A_AutoTrim|A_StringCaseSense|A_FileEncoding|A_FormatInteger|A_FormatFloat|A_KeyDelay|A_WinDelay|A_ControlDelay|A_MouseDelay|A_DefaultMouseSpeed|A_RegView|A_IconHidden|A_IconTip|A_IconFile|A_IconNumber|A_TimeIdle|A_TimeIdlePhysical|A_Gui|A_GuiControl|A_GuiWidth|A_GuiHeight|A_GuiX|A_GuiY|A_GuiEvent|orA_GuiControlEvent|A_EventInfo|A_ThisMenuItem|A_ThisMenu|A_ThisMenuItemPos|A_ThisHotkey|A_PriorHotkey|A_PriorKey|A_TimeSinceThisHotkey|A_TimeSincePriorHotkey|A_EndChar|ComSpec|A_Temp|A_OSType|A_OSVersion|A_Is64bitOS|A_PtrSize|A_Language|A_ComputerName|A_UserName|A_WinDir|A_ProgramFiles|ProgramFiles|A_AppData|A_AppDataCommon|A_Desktop|A_DesktopCommon|A_StartMenu|A_StartMenuCommon|A_Programs|A_ProgramsCommon|A_Startup|A_StartupCommon|A_MyDocuments|A_IsAdmin|A_ScreenWidth|A_ScreenHeight|A_ScreenDPI|A_Cursor|A_CaretX|A_CaretY|Clipboard|ClipboardAll|ErrorLevel|A_LastError|Loop|A_Index|A_LoopFileName|A_LoopRegName|A_LoopReadLine|A_LoopField)'
+        }
+    {# Named Key Contants
+        'name': '.constant.named-key'
+        'match': '(Shift|LShift|RShift|Alt|LAlt|RAlt|Control|LControl|RControl|Ctrl|LCtrl|RCtrl|LWin|RWin|AppsKey|AltDown|AltUp|ShiftDown|ShiftUp|CtrlDown|CtrlUp|LWinDown|LWinUp|RWinDown|RWinUp|LButton|RButton|MButton|WheelUp|WheelDown|WheelLeft|WheelRight|XButton1|XButton2|Joy1|Joy2|Joy3|Joy4|Joy5|Joy6|Joy7|Joy8|Joy9|Joy10|Joy11|Joy12|Joy13|Joy14|Joy15|Joy16|Joy17|Joy18|Joy19|Joy20|Joy21|Joy22|Joy23|Joy24|Joy25|Joy26|Joy27|Joy28|Joy29|Joy30|Joy31|Joy32|JoyX|JoyY|JoyZ|JoyR|JoyU|JoyV|JoyPOV|JoyName|JoyButtons|JoyAxes|JoyInfo|Space|Tab|Enter|Escape|Esc|BackSpace|BS|Delete|Del|Insert|Ins|PGUP|PGDN|Home|End|Up|Down|Left|Right|PrintScreen|CtrlBreak|Pause|ScrollLock|CapsLock|NumLock|Numpad0|Numpad1|Numpad2|Numpad3|Numpad4|Numpad5|Numpad6|Numpad7|Numpad8|Numpad9|NumpadMult|NumpadAdd|NumpadSub|NumpadDiv|NumpadDot|NumpadDel|NumpadIns|NumpadClear|NumpadUp|NumpadDown|NumpadLeft|NumpadRight|NumpadHome|NumpadEnd|NumpadPgup|NumpadPgdn|NumpadEnter|F1|F2|F3|F4|F5|F6|F7|F8|F9|F10|F11|F12|F13|F14|F15|F16|F17|F18|F19|F20|F21|F22|F23|F24|Browser_Back|Browser_Forward|Browser_Refresh|Browser_Stop|Browser_Search|Browser_Favorites|Browser_Home|Volume_Mute|Volume_Down|Volume_Up|Media_Next|Media_Prev|Media_Stop|Media_Play_Pause|Launch_Mail|Launch_Media|Launch_App1|Launch_App2)[\\s\r\n]'
+        }
+    {# Function Definitions
+        'captures':
+                '1': 'name': '.entity.name.function.ahk'
+            '2': 'name': '.puncuation.definition.parameters'
+            '3': 'name': '.variable.parameter.function'
+            '4': 'name': '.puncuation.definition.parameters'
+        'match': '(\\w+)([\(])([\\w\\s,]*)([\)])'
+        }
+    {# Functional Operators
+        'name': '.keyword.operator'
+        'match': '(\\!|\\^|\\+|\\&|\\*|\\~|\\$|:|=|\\%)'
+        }
+]
