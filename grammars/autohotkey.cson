@@ -24,9 +24,9 @@
             '2': 'name': '.punctuation.definition.semi-colon.comment'
         'match': '((;).*)'
         }
-    {# Integers & floats
+    {# Integers, floats, hexadecimal
         'name': '.constant.numeric'
-        'match': '(\\s|^)+([0-9]+(\\.\\d+)?)\\s+'
+        'match': '(\\s|^)+(([0-9]+(\\.\\d+)?)|0x(\\d|[A-Fa-f])+)\\s+'
         }
     {# Directives
         'captures':
