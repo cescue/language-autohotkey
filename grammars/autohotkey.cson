@@ -6,11 +6,11 @@
 # 'firstLineMatch': ''
 'patterns': [
 
-    {# String literals
+    {# Quoted strings
         'name': '.string'
         'match': '["]([^"]|["]["])*["]'
         }
-    {# Percent-sign enclosed variables
+    {# Percent sign enclosed strings
         'name': '.string'
         'captures':
             '1': 'name': '.keyword.operator'
@@ -24,7 +24,7 @@
             '2': 'name': '.punctuation.definition.semi-colon.comment'
         'match': '((;).*)'
         }
-    {# Integers
+    {# Numbers
         'captures':
             '1': 'name': '.constant.numeric'
         'match': '\\s+([0-9]*)\\s+'
@@ -33,7 +33,8 @@
         'captures':
             '1': 'name': '.keyword.operator.ahk'
             '2': 'name': '.keyword.control.directives.ahk'
-        'match': '([\\#])(\\w+)'
+        'match': '(#AllowSameLineComments|#ClipboardTimeout|#CommentFlag|#ErrorStdOut|#EscapeChar|#HotkeyInterval|#HotkeyModifierTimeout|#Hotstring|#If|#IfTimeout|#IfWinActive|#IfWinExist|#IfWinNotActive|#IfWinNotExist|#Include|#IncludeAgain|#InputLevel|#InstallKeybdHook|#InstallMouseHook|#KeyHistory|#LTrim|#MaxHotkeysPerInterval|#MaxMem|#MaxThreads|#MaxThreadsBuffer|#MaxThreadsPerHotkey|#MenuMaskKey|#NoEnv|#NoTrayIcon|#Persistent|#SingleInstance|#UseHook|#Warn|#WinActivateForce)'
+
         }
     {# Build-in Variables
         'name': '.constant.built-in-variable'
