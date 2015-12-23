@@ -16,7 +16,7 @@
             '1': 'name': '.keyword.operator'
             '2': 'name': '.string'
             '3': 'name': '.keyword.operator'
-        'match': '(\\%)([^%]+)(\\%)'
+        'match': '([^%]\\%)([^%]|[`][%])+([^`]\\%)'
         }
     {# Comment Lines
         'captures':
