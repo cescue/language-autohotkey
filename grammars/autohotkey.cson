@@ -6,11 +6,11 @@
 # 'firstLineMatch': ''
 'patterns': [
 
-    {# Quoted strings
+    {# String literals
         'name': '.string'
         'match': '["]([^"]|["]["])*["]'
         }
-    {# Percent sign enclosed strings
+    {# Percent-sign enclosed variables
         'name': '.string'
         'captures':
             '1': 'name': '.keyword.operator'
@@ -24,7 +24,7 @@
             '2': 'name': '.punctuation.definition.semi-colon.comment'
         'match': '((;).*)'
         }
-    {# Numbers
+    {# Integers
         'captures':
             '1': 'name': '.constant.numeric'
         'match': '\\s+([0-9]*)\\s+'
