@@ -1,6 +1,6 @@
 {
   "name": "language-autohotkey",
-  "main": "./lib/language-autohotkey",
+  "main": "./language-autohotkey",
   "version": "0.1.0",
   "description": "Syntax highlighting for AutoHotKey scripts.",
   "activationEvents": [
