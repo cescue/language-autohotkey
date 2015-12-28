@@ -2,7 +2,7 @@
 
 This package adds basic syntax highlighting support for .ahk files in Atom.
 
-![Screenshot of a New AutoHotKey Script](screenshot.png)
+![Screenshot of a sample.ahk](screenshot.png)
 
 Screenshot taken of "New AutoHotKey Script.ahk" included in the project.  
 
