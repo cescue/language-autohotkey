@@ -6,7 +6,7 @@
   "activationEvents": [
     "language-autohotkey:toggle"
   ],
-  "repository": "https://github.com/nshakin/language-autohotkey",
+  "repository": "https://github.com/cescue/language-autohotkey",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
