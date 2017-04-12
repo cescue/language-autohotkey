@@ -1,8 +1,8 @@
 {
-  "name": "language-ahk",
+  "name": "language-autohotkey2",
   "main": "./language-autohotkey",
   "version": "0.1.0",
-  "description": "Syntax highlighting for AutoHotKey scripts.",
+  "description": "Syntax highlighting for AutoHotKey scripts. Fork of nshakin/language-autohotkey.",
   "activationEvents": [
     "language-autohotkey:toggle"
   ],
