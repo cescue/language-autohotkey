@@ -1,5 +1,5 @@
 {
-  "name": "language-autohotkey",
+  "name": "language-ahk",
   "main": "./language-autohotkey",
   "version": "0.1.0",
   "description": "Syntax highlighting for AutoHotKey scripts.",
