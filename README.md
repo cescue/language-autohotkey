@@ -1,5 +1,6 @@
-# AutoHotKey syntax-highlighting for Atom
+# language-autohotkey2
 
-This package adds basic syntax highlighting support for .ahk files in Atom.
+Basic syntax highlighting for AutoHotkey in Atom.
 
-TODO: Update README
+TODO: Come on man, write some documentation.
+
