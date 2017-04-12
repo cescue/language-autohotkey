@@ -1,7 +1,7 @@
 {
   "name": "language-ahk",
   "main": "./language-autohotkey",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Syntax highlighting for AutoHotKey scripts.",
   "activationEvents": [
     "language-autohotkey:toggle"
