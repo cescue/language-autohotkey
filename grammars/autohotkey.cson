@@ -76,7 +76,7 @@ patterns: [
         name: ".variable.parameter.function.ahk"
       "4":
         name: ".punctuation.definition.parameters.ahk"
-    match: "(\\w+)([(])([\\w\\s\",]*)([)])"
+    match: "(\\w+)([(])([\\w\\s\",=_]*)([)])"
   }
   {
     comment: "operators"
